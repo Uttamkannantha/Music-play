@@ -71,13 +71,20 @@ public class home extends HttpServlet {
 		   }
 		   out.println("<!DOCTYPE html>");
 	 	   out.println("<html><head>");
+	 	   out.println("<title>MUSIC</title>");
 	 	   out.println("<style>");
-	 	   out.println("img{position:absolute;left:500px;top:120px;z-index:-1;width:450px;height:400px;}");
+	 	   out.println("body{background-color:rgb(194, 194, 163,0.5);}");
+	 	   out.println("img{position:absolute;left:450px;top:120px;z-index:-1;width:680px;height:550px;}");
+	 	   //out.println(".aud1{ height: 370px;border: no border; text-align: center; position: relative;");
+	 	   out.println("audio{position:absolute;top:90%;left:32.5%;}");
 	 	   out.println("</style></head><body>");
+	 	   out.println("<div>");
 	 	   out.println("<img src="+s2+"height=150>");
+	 	   out.println("</div>");
+	 	   //out.println("<div class=\"aud1\">");
+	 	  //out.println("<div class=\"aud2\">");
 	 	   
-	 	   
-	 	   out.println("<audio controls autoplay>");
+	 	   out.println("<audio controls style=\"width:600px\"autoplay>");
 	 	   	//out.println("<source src=\"C:\\Users\\Ashwin B srivatsa\\Desktop\\06-linkin_park-what_ive_done-.mp3\" type=\"audio/mpeg\">");
 	 	   out.println("<source src="+s1+"type=\"audio/mpeg\">");
 	 	   
